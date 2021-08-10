@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.page {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
