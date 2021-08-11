@@ -1,13 +1,11 @@
 .about {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 77px 130px 76px 130px;
+  padding: 46px 15px;
   background-color: rgba(244, 245, 247, 1);
 }
 
 .article {
-  width: 555px;
+  width: 290px;
 }
 
 .article__title {
@@ -24,4 +22,26 @@
   font-size: 22px;
   line-height: 32px;
   color: rgba(43, 41, 45, 1);
+}
+
+.article:first-child {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 400px) {
+  .about {
+    margin: 0 auto;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px 130px;
+  }
+
+  .article {
+    width: 555px;
+  }
+
+  .article:first-child {
+    margin-bottom: 0;
+  }
 }
