@@ -10,8 +10,18 @@
   border: none;
 }
 
+@media screen and (max-width: 399px) {
+  .hide_mobile {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 400px) {
   .action__button {
     width: 160px;
+  }
+
+  .hide_desktop {
+    display: none;
   }
 }

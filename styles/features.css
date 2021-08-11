@@ -1,7 +1,6 @@
 .features {
   display: flex;
   position: relative;
-  padding-bottom: 103px;
 }
 
 @media screen and (max-width: 399px) {
@@ -91,6 +90,7 @@
 
 .features__advantage-item + .second {
   padding-bottom: 15px;
+  margin-bottom: 110px;
 }
 
 .feature__left-decoration {
