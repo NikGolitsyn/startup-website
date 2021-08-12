@@ -299,7 +299,6 @@ html {
 .footer {
   display: flex;
   flex-direction: column;
-  margin-top: 44px;
   align-items: center;
 }
 .footer__navigation {
@@ -314,6 +313,7 @@ html {
     width: 1140px;
     margin: 0 auto;
     min-height: 338px;
+    padding-top: 44px;
   }
 }
 .footer__links {
@@ -357,6 +357,7 @@ html {
     color: rgba(43, 41, 45, 0.6);
     width: 360px;
     margin-top: 26px;
+    margin-bottom: 0;
   }
 }
 
@@ -369,6 +370,7 @@ html {
   .about-company {
     padding-top: 43px;
     margin-right: 126px;
+    max-width: 360px;
     padding: 0;
     border: none;
   }
@@ -397,11 +399,11 @@ html {
 }
 @media screen and (min-width: 1400px) {
   .additional-navigation {
+    padding: 0;
+    padding-top: 16px;
     display: flex;
     flex-direction: row;
     margin: 0;
-    margin-top: 60px;
-    margin-left: auto;
   }
 }
 .additional-navigation__column:last-child {
@@ -410,6 +412,8 @@ html {
 @media screen and (min-width: 1400px) {
   .additional-navigation__column:last-child {
     margin-top: 0;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -458,7 +462,7 @@ html {
 }
 .terms__item {
   text-decoration: none;
-  margin-right: 19px;
+  margin-right: 25px;
   font-size: 14px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
@@ -477,6 +481,12 @@ html {
 }
 .social-links__item {
   margin-right: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .social-links__img {
+    margin-top: 17px;
+    margin-bottom: 17px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .social-links__item:last-child {
@@ -986,6 +996,13 @@ html {
     width: 262px;
   }
 }
+.audience .user-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+.audience .user-card:hover {
+  background-color: #3141c5;
+  color: white;
+}
 .audience__img-bg:first-child {
   margin-top: 0;
 }
@@ -993,10 +1010,6 @@ html {
   .audience__img-bg:first-child {
     margin-left: 0px;
   }
-}
-.audience__img-bg:nth-child(2) {
-  background-color: #3141c5;
-  color: white;
 }
 .audience__img {
   margin: 22px auto 0;
