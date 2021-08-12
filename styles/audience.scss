@@ -103,7 +103,7 @@
     }
   }
 
-  &__img-bg:nth-child(2) {
+  &__img-bg .blue-bg {
     background-color: $color-blue-bg-img;
     color: $color-white;
   }
