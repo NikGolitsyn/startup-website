@@ -1,7 +1,3 @@
-@import "header.scss", "headline.scss", "common.scss", "footer.scss",
-  "features.scss", "customers.scss", "about.scss", "tips.scss",
-  "breakpoints.scss";
-
 * {
   box-sizing: border-box;
 }
@@ -11,14 +7,26 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
+@import "breakpoints.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "headline.scss";
+@import "common.scss";
+@import "footer.scss";
+@import "features.scss";
+@import "customers.scss";
+@import "about.scss";
+@import "tips.scss";
+@import "order.scss";
+@import "audience.scss";
+
 .page {
   width: 100%;
   overflow-x: hidden;
-}
+  color: $text-color-dark;
 
-@media screen and (min-width: 400px) {
-  .page {
-    width: 1400px;
+  @include for-large-up {
+    max-width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: column;
