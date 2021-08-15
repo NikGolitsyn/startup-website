@@ -23,6 +23,7 @@ html {
 .page {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   color: $text-color-dark;
 
   @include for-large-up {
